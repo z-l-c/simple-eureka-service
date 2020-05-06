@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: simple-eureka-service
+
+server:
+  port: 10800
+
+
+# 本地
+eureka:
+  instance:
+    prefer-ip-address: true
+
+  client:
+    service-url:
+      defaultZone: http://localhost:10800/eureka
